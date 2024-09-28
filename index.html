@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Rafael</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        #welcome-message {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome-message">¡Bienvenido a mi página personal!</div>
+
+    <header>
+        <h1>Rafael - Desarrollador Web</h1>
+        <nav>
+            <a href="#about">Sobre mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav> 
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Soy Rafael, un desarrollador web con experiencia en frontend. Me especializo en crear interfaces intuitivas utilizando HTML, CSS y JavaScript, y estoy aprendiendo React y TypeScript. Actualmente, estoy buscando oportunidades de trabajo para seguir creciendo en el campo del desarrollo web.</p>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div>
+            <h3>Aplicación de Clima</h3>
+            <p>Una app que muestra el clima actual utilizando una API. Desarrollada con HTML, CSS y JavaScript.</p>
+            <a href="https://clima-812xxh38a-rafaelgr03s-projects.vercel.app" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+        </div>
+        <!-- Puedes agregar más proyectos aquí -->
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de <a href="mailto:rafael@example.com">rafaelgr502@gmail.com</a>.</p>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mostrar el mensaje de bienvenida
+            const welcomeMessage = document.getElementById('welcome-message');
+            welcomeMessage.style.display = 'block';
+            setTimeout(() => {
+                welcomeMessage.style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
